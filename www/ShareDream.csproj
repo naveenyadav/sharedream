@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{365DD886-CFF5-443D-85A4-E48C6FB21AE6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Zero.ShareDream</RootNamespace>
+    <AssemblyName>Zero.ShareDream</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AboutUs.aspx" />
+    <Content Include="buttone\button100\left.jpg" />
+    <Content Include="buttone\button100\rect.png" />
+    <Content Include="buttone\button100\right.jpg" />
+    <Content Include="buttone\comment.png" />
+    <Content Include="buttone\Dislike.png" />
+    <Content Include="buttone\left.jpg" />
+    <Content Include="buttone\leftSide.jpg" />
+    <Content Include="buttone\Like.png" />
+    <Content Include="buttone\rect.png" />
+    <Content Include="buttone\right.jpg" />
+    <Content Include="buttone\side.jpg" />
+    <Content Include="buttone\style\feed.css" />
+    <Content Include="buttone\ui-icons_222222_256x240.png" />
+    <Content Include="buttone\ui-icons_2e83ff_256x240.png" />
+    <Content Include="buttone\ui-icons_454545_256x240.png" />
+    <Content Include="buttone\ui-icons_888888_256x240.png" />
+    <Content Include="buttone\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="ChildProfile.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Helpchild.aspx" />
+    <Content Include="Images\back.png" />
+    <Content Include="Images\bg3.png" />
+    <Content Include="Images\down.png" />
+    <Content Include="Images\downloa.png" />
+    <Content Include="Images\download.png" />
+    <Content Include="Images\grave.gif" />
+    <Content Include="Images\more.png" />
+    <Content Include="Images\nav_bg.png" />
+    <Content Include="Images\sharedreamlogo.png" />
+    <Content Include="Images\street1.png" />
+    <Content Include="Images\street2.png" />
+    <Content Include="Images\street3.png" />
+    <Content Include="Images\street4.png" />
+    <Content Include="Images\street5.png" />
+    <Content Include="Images\street6.png" />
+    <Content Include="Images\street7.png" />
+    <Content Include="Photos\322deeed-319b-405b-8ba7-88b7ce37d916__O.jpg" />
+    <Content Include="Photos\3f23b8f7-25f1-47f9-8b0c-b0f5f5e22feb__O.jpg" />
+    <Content Include="Photos\comma.png" />
+    <Content Include="Profile.aspx" />
+    <Content Include="profilePic.aspx" />
+    <Content Include="Scripts\effects.blind.js" />
+    <Content Include="Scripts\effects.bounce.js" />
+    <Content Include="Scripts\effects.clip.js" />
+    <Content Include="Scripts\effects.core.js" />
+    <Content Include="Scripts\effects.drop.js" />
+    <Content Include="Scripts\effects.explode.js" />
+    <Content Include="Scripts\effects.fold.js" />
+    <Content Include="Scripts\effects.highlight.js" />
+    <Content Include="Scripts\effects.pulsate.js" />
+    <Content Include="Scripts\effects.scale.js" />
+    <Content Include="Scripts\effects.shake.js" />
+    <Content Include="Scripts\effects.slide.js" />
+    <Content Include="Scripts\effects.transfer.js" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.7.3.custom.js" />
+    <Content Include="Scripts\jquery.media.js" />
+    <Content Include="Scripts\jwplayer.js" />
+    <Content Include="Scripts\player.swf" />
+    <Content Include="Scripts\ui.accordion.js" />
+    <Content Include="Scripts\ui.core.js" />
+    <Content Include="Scripts\ui.datepicker.js" />
+    <Content Include="Scripts\ui.dialog.js" />
+    <Content Include="Scripts\ui.draggable.js" />
+    <Content Include="Scripts\ui.droppable.js" />
+    <Content Include="Scripts\ui.progressbar.js" />
+    <Content Include="Scripts\ui.resizable.js" />
+    <Content Include="Scripts\ui.selectable.js" />
+    <Content Include="Scripts\ui.slider.js" />
+    <Content Include="Scripts\ui.sortable.js" />
+    <Content Include="Scripts\ui.tabs.js" />
+    <Content Include="Search.aspx" />
+    <Content Include="Styles\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Styles\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Styles\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Styles\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Styles\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Styles\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Styles\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Styles\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Styles\images\ui-icons_222222_256x240.png" />
+    <Content Include="Styles\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Styles\images\ui-icons_454545_256x240.png" />
+    <Content Include="Styles\images\ui-icons_888888_256x240.png" />
+    <Content Include="Styles\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Styles\ui.accordion.css" />
+    <Content Include="Styles\ui.all.css" />
+    <Content Include="Styles\ui.base.css" />
+    <Content Include="Styles\ui.core.css" />
+    <Content Include="Styles\ui.datepicker.css" />
+    <Content Include="Styles\ui.dialog.css" />
+    <Content Include="Styles\ui.progressbar.css" />
+    <Content Include="Styles\ui.resizable.css" />
+    <Content Include="Styles\ui.slider.css" />
+    <Content Include="Styles\ui.tabs.css" />
+    <Content Include="Styles\ui.theme.css" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChildProfile.aspx.cs">
+      <DependentUpon>ChildProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChildProfile.aspx.designer.cs">
+      <DependentUpon>ChildProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="database.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Donation.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Donation.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helpchild.aspx.cs">
+      <DependentUpon>Helpchild.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Helpchild.aspx.designer.cs">
+      <DependentUpon>Helpchild.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="profilePic.aspx.cs">
+      <DependentUpon>profilePic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="profilePic.aspx.designer.cs">
+      <DependentUpon>profilePic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Donation.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Donation.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Donation.dbml.layout">
+      <DependentUpon>Donation.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>37565</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

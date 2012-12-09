@@ -1,0 +1,209 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Zero.ShareDream.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .page
+        {
+            margin-left: auto;
+            margin-right: auto;
+            width: 1100px;
+            background-color: #fff;
+            border: 1px solid #496077;
+        }
+        .login
+        {
+            width: 240px;
+            min-height: 500px;
+            max-height: 2000px;
+            opacity: 0.9;
+            background-color: White;
+            display: inline-block;
+            float: left;
+        }
+        .style
+        {
+            opacity: 1.0;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Styles/Site.css" rel="stylesheet" type="text/css" />
+      <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.6.2.min.js" type="text/javascript"></script>
+    <script src="js/cufon-yui.js" type="text/javascript"></script>
+    <script src="js/functions.js" type="text/javascript"></script>
+    <script src="js/jquery.jcarousel.min.js" type="text/javascript"></script>
+    <script src="js/Myriad_Pro_700.font.js" type="text/javascript"></script>
+
+    <script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>
+    <script>        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } } (document, "script", "twitter-wjs");</script>
+    
+</head>
+<body>
+    <form runat="server">
+    <div style="width: 900px; margin-left: auto; margin-right: auto; background-image: url('http://localhost:11834/Images/street1.png');">
+        <div style="background-color: White">
+            <div style=" height: 331px;">
+               <div id="slider">
+			<!-- Begin Shell -->
+			<div class="shell">
+				<ul class="slider-items">
+					<li>
+						<img src="css/images/30.jpg" alt="Slide Image" />
+						<div class="slide-entry">
+							<h2><span>I Want to</span> Smile.</h2>
+						<%--	<h6>pure html/css Template suitable for almost every<br /> e-commerce platform</h6>--%>
+						<%--	<a href="#" class="button" title="Buy now"><span>Buy now</span></a>--%>
+						</div>
+					</li>
+					<li>
+						<img src="css/images/31.jpg" alt="Slide Image" />
+						<div class="slide-entry1">
+							<h2><span>I Want to</span> Dream.</h2>
+							<%--<p>great for  almost every e-shop:<br /> Computer Hardware, Event &amp; Movie Tickets, Automotive,<br /> Office Supplies, Consumer Electronics, and many more</p>
+							<a href="#" class="button" title="Buy now"><span>Buy now</span></a>--%>
+						</div>
+					</li>
+					
+				</ul>
+				<div class="cl">&nbsp;</div>
+				<div class="slider-nav">
+					
+				</div>
+			</div>
+			<!-- End Shell -->
+		</div>
+                
+            </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false"
+                    IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home" />
+                        <asp:MenuItem NavigateUrl="~/Search.aspx" Text="Search" />
+                        <asp:MenuItem NavigateUrl="~/AboutUs.aspx" Text="About Us" />
+                        <asp:MenuItem NavigateUrl="~/Contact.aspx" Text="Contact Us" />
+                    </Items>
+                </asp:Menu>
+            </div>
+            <asp:Panel ID="PLogin" runat="server" CssClass="login">
+                <asp:Panel ID="PBefore" runat="server" CssClass="login">
+                    <asp:Panel ID="PBeforeLogin" runat="server">
+                        <p>
+                        </p>
+                        <div class="sidebar">
+                            Sign In</div>
+                        <div style="padding: 10px;">
+                            <p>
+                                Email:<br />
+                                <asp:TextBox ID="TBEmail" runat="server" CssClass="style" Width="200"></asp:TextBox></p>
+                            <p>
+                                Password:<br />
+                                <asp:TextBox ID="TBPassword" runat="server" TextMode="Password" Width="200"></asp:TextBox></p>
+                            <p>
+                                <div class="floatLeft">
+                                    <div class="button-left-side">
+                                    </div>
+                                    <div class="button-mid-side floatLeft">
+                                        <asp:LinkButton ID="BLogin" runat="server" Style="top: -10px; position: relative;"
+                                            OnClick="BsignIn_Click">Login</asp:LinkButton>&nbsp;&nbsp;
+                                    </div>
+                                    <div class="button-right-side floatLeft">
+                                    </div>
+                                </div>
+                                <div class="flotRight" style="margin-left: 20px;">
+                                    &nbsp;&nbsp;<div class="button-left-side">
+                                    </div>
+                                    <div class="button-mid-side floatLeft">
+                                        <asp:LinkButton ID="LBSignup" runat="server" Style="top: -10px; position: relative;"
+                                            OnClick="LBSignup_Click">Sign Up</asp:LinkButton><br />
+                                    </div>
+                                    <div class="button-right-side floatLeft">
+                                    </div>
+                                </div>
+                            </p>
+                        </div>
+                        <asp:Label ID="LError" runat="server"></asp:Label>
+                    </asp:Panel>
+                    <asp:Panel ID="PSignup" runat="server" Visible="false">
+                        <p>
+                        </p>
+                        <div class="sidebar">
+                            Sign Up</div>
+                        <div style="width: 202px; padding: 10px;">
+                            <p>
+                                Name:<br />
+                                <asp:TextBox ID="Signup_TBName" runat="server" Width="200"></asp:TextBox></p>
+                            <p>
+                                Email:<br />
+                                <asp:TextBox ID="Signup_TBEmail" runat="server" Width="200"></asp:TextBox></p>
+                            <p>
+                                Password:<br />
+                                <asp:TextBox ID="Signup_TBPassword" runat="server" Width="200" TextMode="Password"></asp:TextBox></p>
+                            <p>
+                                Mobile No:<br />
+                                <asp:TextBox ID="Signup_Mobile" runat="server" Width="200"></asp:TextBox></p>
+                            <p>
+                                Current City:<br />
+                                <asp:TextBox ID="Signup_City" runat="server" Width="200"></asp:TextBox></p>
+                            <p>
+                                Address:<br />
+                                <asp:TextBox ID="TBAddress" runat="server" TextMode="MultiLine" Width="200"></asp:TextBox></p>
+                            <p>
+                                <div class="floatLeft">
+                                    <div class="button-left-side">
+                                    </div>
+                                    <div class="button-mid-side floatLeft">
+                                        <asp:LinkButton ID="BSignup" runat="server" CssClass="floatLeft" Style="top: -10px;
+                                            position: relative;" OnClick="BSignup_Click">Sign Up</asp:LinkButton>
+                                    </div>
+                                    <div class="button-right-side floatLeft">
+                                    </div>
+                                </div>
+                                <div class="flotRight" style="margin-left: 20px;">
+                                    &nbsp;&nbsp;<div class="button-left-side">
+                                    </div>
+                                    <div class="button-mid-side floatLeft">
+                                        <asp:LinkButton ID="LBSignupLogin" Style="top: -10px; position: relative;" runat="server"
+                                            OnClick="LBLogin_Click">Login</asp:LinkButton>
+                                    </div>
+                                    <div class="button-right-side floatLeft">
+                                    </div>
+                                </div>
+                        </div>
+                        <br style="clear: both;" />
+                    </asp:Panel>
+                </asp:Panel>
+                <asp:Panel ID="PAfterLogin" runat="server" Visible="false">
+                    <p>
+                    </p>
+                    <div class="sidebar">
+                        <asp:LinkButton ID="LAddopted" runat="server" OnClick="LBAdopted_Click">Adopted Children</asp:LinkButton></div>
+                    <div class="sidebar">
+                        <asp:LinkButton ID="LEdit" runat="server" OnClick="LCreate_Click">Create Child Profile</asp:LinkButton></div>
+                    <div class="sidebar">
+                        <asp:LinkButton ID="LSignOut" runat="server" OnClick="LBSignOut_Click">Sign Out</asp:LinkButton></div>
+                </asp:Panel>
+                <asp:ContentPlaceHolder ID="CPHLogin" runat="server">
+                </asp:ContentPlaceHolder>
+            </asp:Panel>
+            <asp:Panel ID="Panel" runat="server" CssClass="ui-outer">
+                <asp:ContentPlaceHolder ID="CPHDonation" runat="server">
+                </asp:ContentPlaceHolder>
+            </asp:Panel>
+        </div>
+        <div class="clear">
+        </div>
+        <div class="footer">
+            <p style="width: 100%; border-top: 1px solid aqua;">
+                &copy; 2012 Share Dream
+            </p>
+        </div>
+        </div>
+    </form>
+</body>
+</html>
